@@ -1,0 +1,7 @@
+chemistry.html
+physics.html
+english.html
+math.html
+biology.html
+nepali.html
+computer.html

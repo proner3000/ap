@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappear on Hover</title>
+    <style>
+        /* Initially visible element */
+        .element-to-hover {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: all 0.3s ease;
+        }
+
+        /* Element to hide when the other element is hovered */
+        .element-to-hide {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 0.3s ease;
+        }
+
+        /* Hide the element-to-hide when element-to-hover is hovered */
+        .element-to-hover:hover + .element-to-hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="element-to-hover"></div>
+    <div class="element-to-hide"></div>
+</body>
+</html>

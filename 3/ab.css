@@ -1,0 +1,55 @@
+:root {
+    --g1: rgb(228, 10, 10);
+    --g2: rgb(253, 253, 253);
+}
+
+@keyframes background-b {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+body {
+    background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+    animation: background-b 10s linear infinite;
+    background-size: 200%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.z,.c{
+    top: -68px;
+}
+
+#atiles {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    grid-template-rows: repeat(var(--row), 1fr);
+    /* visibility: hidden; */
+}
+#ple{
+    position: absolute;
+}
+.abtile {
+    outline: 1px solid transparent; /*change here*/
+}
+
+#plve{
+    opacity: 0;
+    position: absolute;
+    color: white;
+}
+
+.abtile:before {
+    background-color: black;
+    content: "";
+    position: absolute;
+    /* inset: 0.5px; */
+    outline: 1px;
+}

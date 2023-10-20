@@ -1,0 +1,20 @@
+class 11-12
+chemistry.html
+physics.html
+english.html
+math.html
+biology.html
+nepali.html
+computer.html
+
+class 8-9-10
+optmath.html
+science.html
+nepali.html
+english.html
+health.html
+account.html
+socialstudies.html
+grammar.html
+Mathmathics.html
+computer.html

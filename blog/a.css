@@ -1,0 +1,25 @@
+:root {
+    --g1: rgb(0, 0, 0);
+    --g2: rgb(253, 253, 253);
+  }
+  
+  @keyframes a {
+    from {
+      background-position: 0% center;
+    }
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  body {
+    animation: a 1s linear infinite;
+    background-size: 200%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    background: linear-gradient(to right, var(--g1), var(--g2), var(--g1)); /* Corrected */
+  }
+  
+  /* Rest of your CSS remains the same */
+  

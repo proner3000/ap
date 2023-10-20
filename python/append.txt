@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ALL SCRIPT -->
+   <script src="https://kit.fontawesome.com/a142baf863.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid ap" style="padding: 0 0 0 0">
+        <nav class="pp">
+            <div id="main" class="d">
+               <span id="z" style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+             </div>
+         <a class="navbar-brand b" href="index.html"> <img src="../images/1.png" class="bgg" style="height: 157px; "  > <img src="../images/2.jpg" class="c" style="width: 202px; " ></a>
+        </nav>
+        </div>   
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" onclick="closeNav()"><i class='fas fa-angle-left'style='font-size:24px color:white;' ></i> Close</button>
+    
+    <a  href="../index.html">Home</a>
+    <a  href="../about.html">About</a>
+    <a  href="../notes.html">Notes</a>
+    <a  href="../support.html">Support us</a>
+    <a  href="../contact.html">Contact us</a>
+     </ul>
+</div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid text-center">    
+      <div class="row content">
+        <div class="col-sm-2 ads">
+          <p><a href="#">ADS</a></p>
+        </div>
+        <div class="col-sm-8 text-left row"> 
+          <em><b><strong><h1>+2 >> 11</h1></strong></b></em>
+          <ul id="qq" class="col-sm-6"> 
+            <b><em>Notes</em></b>
+              <a href="notes/11/english.html">
+               <li>English notes</li></a>
+
+               
+               <a href="notes/11/math.html">
+                 <li>Mathmatices notes</li>
+                </a>
+                
+                <a href="notes/11/chemistry.html">
+                  <li>Chemistry notes</li>
+                </a>
+                
+                
+                <a href="notes/11/biology.html">
+                  <li>Biology notes</li>
+                </a>
+                
+                <a href="notes/11/computer.html">
+                  <li>Computer notes</li>
+                </a>
+                
+                <a href="notes/11/nepali.html">
+                  <li>Nepali notes</li>
+                </a>
+                
+                <a href="notes/11/physics.html">
+                  <li>Physics notes</li>
+                </a>
+            </ul>
+            <hr class="apon">
+            <ul id="qq" class="col-sm-6">
+              <strong><em>Solutions</em></strong>
+              <a href="solutions/11/english.html">
+                <li>English solutions</li>
+              </a>
+
+            <a href="solutions/11/math.html">
+              <li>Mathmatices solutions</li>
+            </a>
+
+            <a href="solutions/11/chemistry.html">
+              <li>Chemistry solutions</li>
+            </a>
+            
+          <a href="solutions/11/biology.html">
+            <li>Biology solutions</li>
+          </a>
+          
+          <a href="solutions/11/computer.html">
+            <li>Computer solutions</li>
+          </a>
+          
+          <a href="solutions/11/nepali.html">
+            <li>Nepali solution</li>
+          </a>
+
+          <a href="solutions/11/physics.html">
+            <li>Physics solutions</li>
+          </a>
+
+            </ul>
+            <em><strong><a href="11/practical.html">
+              <li>Practical</li>
+            </a></strong></em>
+            <hr>
+        </div>
+        <div class="col-sm-2 ads">
+          <div class="well">
+            <p>ADS</p>
+          </div>
+          <div class="well">
+            <p>ADS</p>
+          </div>
+        </div>
+      </div>
+    </div>          
+   </div> <div class="copyright_section">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-6 col-sm-12">
+            <p class="copyright_text">&#169 2023 All Rights Reserved.<a href="about.html">Design by ...</a></p>
+         </div>
+         <div class="col-lg-6 col-sm-12">
+            <div class="footer_social_icon">
+               <ul id="connect">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+          </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+<script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "160px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("z").style.display = "none";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.getElementById("z").style.display = "inline";
+        document.body.style.backgroundColor = "white";
+        }
+</script>
+   
+</body>
+</html> 

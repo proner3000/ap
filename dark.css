@@ -1,0 +1,215 @@
+.apon{
+display: none;
+}
+#connect{
+  display: inline;
+}
+.ap:hover{
+  background: linear-gradient(45deg, #eee, #eee 40%, #333 65%);
+  
+}
+svg{
+    cursor:pointer;
+}
+b a{
+  color:red;
+  text-decoration: none; 
+}
+#no-dec{
+  text-decoration: none; 
+  color:whitesmoke;
+}
+#no-decb{
+  text-decoration: none; 
+  color:black;
+} 
+
+#no-deco{
+  text-decoration: none; 
+} 
+#no-decb:hover{
+  color:blueviolet;
+  cursor:pointer;
+
+}
+#no-dec:hover{
+  cursor:pointer;
+  color:blueviolet;
+}
+ul a{
+  list-style:none;
+  text-decoration: none; 
+  color:black;
+}
+ul li{
+  list-style:none;
+  text-decoration: none; 
+  color:black;
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav  {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  
+}
+
+#main {
+  display: inline-block;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.c{
+  position: relative;
+  top:-1px;
+  left:-26px;
+}
+.d{
+  position: relative;
+  top: 6px;
+  left:7px;
+}
+.bgg{
+        position: relative;
+        top:-5px;
+        left:-8px;
+      }
+      @media (max-width: 573px) {
+       
+.apon{
+  display:block;
+  } 
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        .d{top:21px; 
+          left:-3px;}
+      }
+      @media (max-width: 465px){
+        .b{
+          position: absolute;
+    left: 44px;
+    top: -16px;
+}
+.d{top:21px; 
+          left:-3px;}
+        .pp{
+          height: 17vh;
+        }
+        .a{
+          width:28px;
+          top:68px;
+          right:10px;
+        }
+        .c{
+          left:-29px;
+        }
+      }
+      @media (max-width: 391px){
+        .ap{
+          width:103vw;
+          height:17vh;
+        }
+        .d{top:21px; 
+          left:-3px;}
+      }
+    
+    /* Set gray background color and 100% height */
+    .ads {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .ads {
+        height: auto;
+        padding: 15px;
+      }
+   }
+   .ap{
+        background: linear-gradient(45deg, #333, #333 50%, #eee 75%);
+      }
+      ul#connect li{
+     display: inline;
+     padding-right: 15px;
+     font-size: 36px;
+      }
+    
+
+.ndis{
+        display: inline;
+      }
+.dis{
+  display:none;
+}
+.ndis:hover{
+  display:none;
+}
+.ndis:hover+ .dis{
+  display:inline;
+}
+
+
+.nadn{
+  display: inline;
+}
+.adn{
+display:none;
+}
+.nadn:hover{
+display:none;
+}
+.nadn:hover+ .adn{
+display:inline;
+}
+   /* For active and passive link */
+   ul div#active a li{
+    color:green ;
+  }
+  ul div#progess a li{
+    color:yellow ;
+  }
+  ul div#passive a li{
+    color:red ;
+  }

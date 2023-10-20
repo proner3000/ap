@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Grid Background</title>
+    <style>
+        :root {
+            --g1: rgb(228, 10, 10);
+            --g2: rgb(253, 253, 253);
+        }
+
+        @keyframes background-b {
+            from {
+                background-position: 0% center;
+            }
+            to {
+                background-position: -200% center;
+            }
+        }
+
+        body {
+            background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+            animation: background-b 10s linear infinite;
+            background-size: 200%;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0px;
+        }
+
+        #atiles {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(var(--col), 1fr);
+            grid-template-rows: repeat(var(--row), 1fr);
+        }
+
+        #ple {
+            position: relative;
+        }
+
+        .abtile {
+            outline: 1px solid transparent;
+        }
+
+        .abtile:before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            outline: 1px;
+        }
+
+        /* Add additional styles for the "ple" element */
+        #ple {
+            opacity: 0; /* Initially hidden */
+            background-color: transparent;
+            color: #fff;
+            transition: all 1s ease; /* Transition animation */
+        }
+    </style>
+</head>
+<body>
+    <button id="toggle-button">kjh</button>
+    <div id="atiles"></div>
+
+    <div id="ple">
+        <h4>Welcome to khushankhadka.com.np - Your Ultimate Study Companion</h4>
+        <p>
+            <br> " At khushankhadka.com.np, we're dedicated to empowering students on their educational journey. Our platform is meticulously crafted to facilitate learning, note-taking, and academic excellence. <br>
+            <br>
+            <em>
+                <b>Why Choose Us</b>
+            </em>: <br>
+            <br>
+            <em>
+                <b>Comprehensive Notes </b>: Access well-structured, in-depth notes that simplify complex topics, making learning a breeze. <br>
+                <br>
+                <strong>Problem Solutions</strong>: Find detailed solutions to exercises and problem sets, enhancing your understanding and boosting your confidence. <br>
+                <br>
+                <strong>Extra </strong>: We provide additional practice questions to reinforce your skills, ensuring you're fully prepared for exams. <br>
+                <br>
+                <em>
+                    <b>Why khushankhadka.com.np Matters</b>
+                </em>: <br>
+                <br> We understand that education should be accessible to all. That's why we offer a cost-effective solution, eliminating the need to purchase extra books or resources. Our commitment to quality education knows no bounds, making us the ideal choice for students of all levels. <br>
+                <br> Join us today, embark on a journey of knowledge, and let us be your trusted companion in the pursuit of academic success! " --- said a
+        </p>
+        <p>
+            <a href="notes.html">
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="click here to"> Get started </button>
+            </a>
+        </p>
+        <br>
+        <br>
+    </div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Initialize a variable to keep track of whether the animation is active or not
+        let isAnimationActive = true;
+
+        // Function to toggle the animation between "ple" and "atiles"
+        const toggleAnimation = () => {
+            // Check if the animation is active
+            if (isAnimationActive) {
+                // Pause the animation for "atiles"
+                anime.pause('.abtile');
+                // Animate the "ple" element
+                anime({
+                    targets: "#ple",
+                    opacity: 1,
+                    backgroundColor: "rgb(0, 0, 0)",
+                    color: "black",
+                    duration: 1000, // Set the animation duration (1 second in this case)
+                });
+            } else {
+                // Resume the animation for "atiles"
+                anime.play('.abtile');
+                // Animate the "ple" element back to its original state
+                anime({
+                    targets: "#ple",
+                    opacity: 0,
+                    backgroundColor: "transparent",
+                    color: "#fff",
+                    duration: 1000, // Set the animation duration (1 second in this case)
+                });
+            }
+
+            // Toggle the animation state
+            isAnimationActive = !isAnimationActive;
+        };
+
+        // Add an event listener to a button or any element to trigger the toggle
+        const toggleButton = document.getElementById('.atile'); // Replace 'toggle-button' with the actual ID of your button
+        toggleButton.addEventListener('click', toggleAnimation);
+
+        // Rest of your JavaScript code for grid animation (if any) goes here
+    </script>
+</body>
+</html>

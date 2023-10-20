@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div  id="externalContent"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Page</title>
+</head>
+<body>
+    <div id="header">
+</div>
+    <h1>Welcome to the Current Page</h1>
+    <div ></div>
+    <div id="footer">
+    </div>
+    <script>
+        // Function to load external HTML content and apply CSS
+        function loadExternalContent() {
+            // Fetch the content of external.html
+            fetch('external.html')
+                .then(response => response.text())
+                .then(data => {
+                    // Create a temporary <div> element to hold the parsed HTML
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data;
+
+                    // Extract the <head> content from the temporary element
+                    const externalHead = tempDiv.querySelector('head');
+
+                    // Find the target element where you want to insert the external content
+                    const targetElement = document.getElementById('externalContent');
+
+                    // Append the external <head> content to the target element
+                    targetElement.appendChild(externalHead);
+
+                    // Load the external CSS file (dark.css)
+                    const linkElement = document.createElement('link');
+                    linkElement.rel = 'stylesheet';
+                    linkElement.href = 'dark.css'; // Replace with the path to your CSS file
+                    document.head.appendChild(linkElement);
+                })
+                .catch(error => console.error('Error fetching external content:', error));
+        }
+
+        // Call the loadExternalContent function to load the external content and apply CSS when the page loads
+        loadExternalContent();
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dark.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7033703888764854" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a142baf863.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>404 error</title>
+    <meta name="description" content="Welcome to khushankhadka.com.np - Your Note-Taking Companion. Discover the power of organized knowledge with our easy-to-use note-taking tools. Capture and access your notes effortlessly, whether you're a student, a professional, or a lifelong learner. Join our community and elevate your learning experience today." >
+    <link rel="canonical" href="https://www.khushankhadka.com.np/404.html">
+    <meta name="author" content="khusbu khadka">
+    <meta name="keywords" content="khusbu,khadka,khusbunotes,class,8,9,10 ,notes,nepal,nepali,math,science,setbook">
+    <meta http-equiv="refresh" content="30;url=https://www.khushankhadka.com.np/404.html">
+    <meta name="robots" content="noindex">
+     <link rel="canonical" href="https://www.khushankhadka.com.np/404.html">
+     <meta property="og:title" content="Invitation to khushankhadka.com.np">
+     <meta property="og:description" content="khushankhadka.com.np - Your Note-Taking Companion. Discover the power of organized knowledge with our easy-to-use note-taking tools(set solution). Capture and access your notes effortlessly, whether you're a student, a professional, or a lifelong learner. Join our community and elevate your learning experience today.Notes from 8-12">
+     <meta property="og:image" content="/images/2.png">
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="Invitation to khushankhadka.com.np">
+     <meta name="twitter:description" content="khushankhadka.com.np - Your Note-Taking Companion. Discover the power of organized knowledge with our easy-to-use note-taking tools. Capture and access your notes effortlessly, whether you're a student, a professional, or a lifelong learner. Join our community and elevate your learning experience today.Notes from 8-12">
+     <meta name="twitter:image" content="/images/2.png">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="text-center">
+        Did u venture into a wrong link?<br> <a href="index.html">click here to go to the home page</a>
+        or for notes<a href="notes.html"><emp> Notes</emp></a>
+        <br><hr><br>
+    </main>    
+    <timer>
+      <center><b>  <p id="timer">00</p></b></center> 
+  <script>
+   
+    const countdownTime =  30; 
+
+    // Get the timer element
+    const timerElement = document.getElementById("timer");
+
+    // Function to update the timer display
+    function updateTimerDisplay(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
+      timerElement.textContent = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    }
+
+    // Function to start the countdown
+    function startCountdown() {
+      let seconds = countdownTime;
+      updateTimerDisplay(seconds);
+
+      const countdownInterval = setInterval(function () {
+        seconds--;
+
+        if (seconds < 0) {
+          clearInterval(countdownInterval);
+          timerElement.textContent = "0:00";
+          alert("Countdown has finished!");
+        } else {
+          updateTimerDisplay(seconds);
+        }
+      }, 1000); 
+    }
+    window.onload = startCountdown;
+  </script>
+    </timer>
+ <div id="footer">
+ </div>
+
+ <script src="toggle.js" ></script>
+
+</body>
+</html>

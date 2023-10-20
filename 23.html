@@ -1,0 +1,33 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href = "dark.css" rel="stylesheet">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7033703888764854"
+     crossorigin="anonymous"></script>
+    <!-- Meta tags and styles -->
+</head>
+<body>
+
+    <!-- Replacement content -->
+    <div id="replacement">
+        <!-- Content will be loaded here using JavaScript -->
+    </div>
+
+    <script>
+        // Function to fetch and replace content
+        function replaceContent() {
+            fetch('q.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('replacement').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        }
+
+        // Call the replaceContent function to load and replace content
+        replaceContent();
+    </script>
+</body>
+</html>
